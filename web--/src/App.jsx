@@ -22,7 +22,7 @@ function App() {
   }
 };
 
-  return {
+  return (
     <div className="container mt-4">
       <h2>Liczba sekcji: {sectionNames.length}</h2>
 
@@ -46,11 +46,26 @@ function App() {
           />
         </div>
 
-        
+        <div className="mb-3">
+          <label htmlFor="numerSekcji" className="form-label">
+            Numer sekcji:
+          </label>
+          <input
+            type="number"
+            className="form-control"
+            id="numerSekcji"
+            value={sectionNumber}
+            onChange={(e) => setSectionNumber(e.target.value)}
+          />
+        </div>
+
+        <button type="submit" className="btn btn-primary">
+          Zapisz
+        </button>
 
         </form>
       </div>
-  }
+      )
 }
 
 export default App

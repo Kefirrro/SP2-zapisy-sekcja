@@ -14,10 +14,17 @@ function App() {
   const isValidNumber =
     Number.isInteger(number) && number >= 1 && number <= sectionNames.length;
   
+  console.log(fullName);
+  if(isValidNumber) {
+    console.log(sectionNames[number - 1]);
+  } else {
+    console.log('Nieprawidłowy numer sekcji');
+  }
+};
+
   return {
 
   }
-}
 }
 
 export default App

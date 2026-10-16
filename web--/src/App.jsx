@@ -23,7 +23,16 @@ function App() {
 };
 
   return {
+    <div className="container mt-4">
+      <h2>Liczba sekcji: {sectionNames.length}</h2>
 
+      <ol>
+        {sectionNames.map((name) => (
+          <li key={name}>{name}</li>
+        ))}
+      </ol>
+
+      </div>
   }
 }
 

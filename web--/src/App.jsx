@@ -32,6 +32,23 @@ function App() {
         ))}
       </ol>
 
+      <form onSubmit={handleSubmit}>
+        <div className="mb-3">
+          <label htmlFor="imieNazwisko" className="form-label">
+            Imię i nazwisko:
+          </label>
+          <input
+            type="text"
+            className="form-control"
+            id="imieNazwisko"
+            value={fullName}
+            onChange={(e) => setFullName(e.target.value)}
+          />
+        </div>
+
+        
+
+        </form>
       </div>
   }
 }

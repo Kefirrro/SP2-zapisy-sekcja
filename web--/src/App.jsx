@@ -10,6 +10,9 @@ function App() {
   const handleSubmit = (event) => {
     event.preventDefault();
 
+  const number = Number(sectionNumber);
+  const isValidNumber =
+    Number.isInteger(number) && number >= 1 && number <= sectionNames.length;
   
   return {
 
